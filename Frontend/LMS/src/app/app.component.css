@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 20px;
+  }
+
+footer{
+    flex-shrink: 0;
+    background-color: lightsalmon;
+    padding: 20px 0;
+}
+
+nav{
+    background-color: lightcoral;
+}
+.nav-item a {
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item a:hover{
+    color: blue;
+    transform: scale(1.2);
+}

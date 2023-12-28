@@ -1,0 +1,41 @@
+<!-- <body class="d-flex flex-column min-vh-100"> -->
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="laptops" routerLinkActive="active" class="nav-link"> <i class="bi bi-list"></i> Laptop List</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="create-laptop" routerLinkActive="active" class="nav-link"> <i class="bi bi-plus-circle"></i> Add
+          Laptop</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a routerLink="update-laptop" routerLinkActive="active" class="nav-link"> <i class="bi bi-pencil-square"></i>
+          Update Laptop</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a routerLink="laptop-details" routerLinkActive="active" class="nav-link"> <i class="bi bi-list"></i> Laptop
+          details</a>
+      </li> -->
+      <li class="nav-item">
+        <a routerLink="contact-us-page" routerLinkActive="active" class="nav-link"> Contact Us </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="sign-in" routerLinkActive="active" class="nav-link"> sign in </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="sign-up" routerLinkActive="active" class="nav-link"> sign up </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container flex-grow-1">
+    <h1 class="text-center"> {{title}} </h1>
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="text-center text-lg-start">
+    <div class="text-center p-4">
+      <a class="text-reset fw-bold" href="http://localhost:4200/#">All Rights Reserved 2023 &#64; LMS</a>
+    </div>
+  </footer>
+<!-- </body> -->

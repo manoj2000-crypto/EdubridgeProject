@@ -1,0 +1,32 @@
+<h2 class="text-center mb-4">Laptop List</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let laptop of laptops" class="table-row">
+                <td>{{ laptop.laptopId }}</td>
+                <td>{{ laptop.laptopName }}</td>
+                <td>{{ laptop.laptopPrice | currency:'INR':'symbol' }}</td>
+                <td>
+                    <button (click)="updateLaptop(laptop.laptopId)" class="btn btn-info btn-sm custom-button">
+                        Update
+                    </button>
+                    <button (click)="deleteLaptop(laptop.laptopId)" class="btn btn-danger btn-sm custom-button">
+                        Delete
+                    </button>
+                    <button (click)="laptopDetails(laptop.laptopId)" class="btn btn-info btn-sm custom-button">
+                        View
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

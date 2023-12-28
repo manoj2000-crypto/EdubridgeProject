@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="card mx-auto" style="max-width: 400px;">
+        <div class="card-header">
+            <h3 class="text-center mb-4">Update Laptop</h3>
+        </div>
+        <div class="card-body">
+
+            <form (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label for="laptopId" class="form-label">ID</label>
+                    <input type="number" readonly class="form-control" id="laptopId" [(ngModel)]="laptop.laptopId"
+                        name="laptopId">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopName" class="form-label">Laptop Name</label>
+                    <input type="text" class="form-control" id="laptopName" [(ngModel)]="laptop.laptopName"
+                        name="laptopName">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopPrice" class="form-label">Laptop Price</label>
+                    <input type="number" class="form-control" id="laptopPrice" [(ngModel)]="laptop.laptopPrice"
+                        name="laptopPrice">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopSerialNumber" class="form-label">Laptop Serial Number</label>
+                    <input type="number" class="form-control" id="laptopSerialNumber"
+                        [(ngModel)]="laptop.laptopSerialNumber" name="laptopSerialNumber">
+                </div>
+
+                <div class="mb-3">
+                    <label for="laptopWarrantyStatus" class="form-label">Laptop Warranty Status</label>
+                    <input type="text" class="form-control" id="laptopWarrantyStatus"
+                        [(ngModel)]="laptop.laptopWarrantyStatus" name="laptopWarrantyStatus">
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
