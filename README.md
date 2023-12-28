@@ -1,2 +1,2 @@
 # EdubridgeProject
-ExLat project , Name : Laptop Management System, Frontend : [Angular, HTML, CSS, BootStrap, TypeScript], Backend : [Java, Spring Boot], Description : In this project i have created User Interface for CRUD operations with REST API , and with Email sending utility.
+<h2>ExLat project</h2><hr> <b>Name : Laptop Management System</b><br> <p>Frontend : [Angular, HTML, CSS, BootStrap, TypeScript]<br> Backend : [Java, Spring Boot]</p> <p>Description : In this project i have created User Interface for CRUD operations with REST API , and with Email sending utility.</p>
